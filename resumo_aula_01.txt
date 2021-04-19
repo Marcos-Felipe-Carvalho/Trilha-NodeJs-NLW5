@@ -1,0 +1,36 @@
+01 - Criar projeto
+    a) npm init
+    b) npm install express --save
+    c) criar uma pasta src 
+    d) criar um arquivo server.ts 
+        d)0.1) importar express no server.ts
+            
+            import express from "express";
+            
+            const app = express()
+            
+            app.listen(3333, ()=> console.log("Server is running on port 3333")
+            
+        
+        d)0.2) instalar tipagem da biblioteca
+            npm install --save-dev @types/express
+            
+        d)0.3) instalar typescript
+            npm install -dev typescript
+            
+        d)0.4) criar arquivo de configuração do typescript
+            npm tsc --init
+        
+        d)0.5) tsconfig.json colocar strict como false
+            "strict:" false
+            
+        d)0.6) fazer com que o node intreprete o ts
+            npm i ts-node-dev --save-dev
+    
+    e) package.json, colocar script para o node executar
+        "scripts":{
+            "dev":"ts-node-dev src/server.ts"
+        }
+    
+    f) rodar código 
+        npm run dev
