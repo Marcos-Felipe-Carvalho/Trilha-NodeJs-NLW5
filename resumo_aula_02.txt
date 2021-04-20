@@ -1,0 +1,22 @@
+Resumo da Aula:
+
+Configuração do TypeOrm
+O que são migrations?
+Criação de migrations
+Criação de entidades
+Criação de rotas de configuração
+
+
+#criar uma migration
+
+    npx typeorm migration:create -n YourName -d src/migrations
+
+    npx typeorm migration:create -n CreateSettings -d src/database/migrations
+
+#executar uma migration
+
+    npm run typeorm migration:run
+
+#Código
+
+embuscadoproximonivel
