@@ -1,4 +1,5 @@
 import { Request, Response } from 'express';
+import { SettingsService } from '../services/SettingsService';
 import { UserService } from '../services/UsersService';
 
 

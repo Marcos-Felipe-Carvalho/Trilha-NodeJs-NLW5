@@ -1,0 +1,26 @@
+#Protocolo Http
+
+#Protocolo WebSocket
+
+#1 - Instalar WebSocket na aplicação
+
+    npm install socket.io
+
+#2 - Instalar tipagens do WebSocket
+
+    npm install --dev @types/socket.io
+
+#3 - Configurar front end no server.ts
+
+    app.use(express.static(path.join(__dirname, "..", "public")))
+    app.set("views", path.join(__dirname,"..","public"))
+    app.engine("html", require("ejs").renderFile)
+    app.set("view engine", "html")
+
+#4 - Instalar socket do cliente
+
+    npm install socket.io-client
+
+#5 - Criar Conexão
+
+#6 - Salvar conexão
