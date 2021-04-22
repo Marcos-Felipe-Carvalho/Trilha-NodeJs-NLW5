@@ -1,0 +1,38 @@
+#1) Criar Migration de Usuário
+
+    npx typeorm migration:create -n CreateUsers -d src/database/migrations
+
+#2) Executar Migration
+
+    npm run typeorm migration:run
+
+#3) Criar Entidade de Usuário
+
+#4) Criar Repositorio
+
+#5) Criar Service de Usuário
+
+#6) Criar controller
+
+#7) Criar Migration de Mensagens
+
+        npx typeorm migration:create -n Messages -d src/database/migrations
+
+#8) Executar Migration de Mensagens
+
+    npm run typeorm migration:run
+
+#9) Criar Entidade de Mensagens
+
+#10) Criar Repositorio Mensagens
+
+#11) Criar Service de Mensagens
+
+#12) Criar controller de Mensagens
+
+#Código
+
+astronautas
+
+
+
