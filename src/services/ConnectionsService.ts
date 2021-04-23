@@ -36,6 +36,23 @@ class ConnectionService{
 
         return connection
     }
+
+    async allConnectionsWithoutAdmin(){
+        const connection = this.connectionRepository.find({
+            where: { admin_id: null},
+            relations: ["user"]
+        })
+
+        return connection
+
+    }
+
+    async findSocketId(socket_id:string){
+        const connection = this.connectionRepository.findOne({
+            socket_id
+        })
+        return connection
+    }
 }
 
 export { ConnectionService }
